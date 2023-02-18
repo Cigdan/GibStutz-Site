@@ -1,14 +1,11 @@
-import React from 'react';
+import React, { forwardRef } from "react";
 
-
-function Team() {
-    return ( 
+const Team = forwardRef((props, ref) => {
+  return (
     <>
-        <div className='h-screen w-full snap-center'>
-
-        </div>
-    </> 
-    );
-}
+      <div ref={ref} className="h-screen w-full snap-center"></div>
+    </>
+  );
+});
 
 export default Team;

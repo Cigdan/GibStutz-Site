@@ -24,7 +24,7 @@ function Counter(props) {
       }
     }, [totalNumber]);
     return (
-      <div className="card w-full h-[30%] my-3 min-h-max py-4 bg-gs-50 items-center overflow-visible dropdown dropdown-right" tabindex="0">
+      <div className="card w-full h-[30%] my-3 min-h-max py-4 bg-gs-50 items-center overflow-visible dropdown dropdown-right" tabIndex="0">
         {image}
         <h2 className="min-md:text-2xl text-center break-words mt-2">
           {message}

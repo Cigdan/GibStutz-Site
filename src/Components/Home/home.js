@@ -1,14 +1,15 @@
-import React from 'react';
+import React, {useRef, forwardRef} from 'react';
 import Header from "../../layouts/header"
 import MainContent from './mainContent';
 import Startpage from './Startpage';
 
 function Home() {
+    const teamRef = useRef(null)
     return ( 
         <>
             <Header />
-            <Startpage />
-            <MainContent />
+            <Startpage teamRef={teamRef} />
+            <MainContent ref={teamRef} />
         </>
      );
 }

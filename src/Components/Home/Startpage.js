@@ -6,7 +6,13 @@ import { BsFillKeyboardFill, BsFillCaretDownFill } from "react-icons/bs";
 import { AiFillDollarCircle } from "react-icons/ai";
 import Highlight from "../../images/highlight.mp4";
 
-function Startpage() {
+const Startpage = ({ teamRef }) => {
+
+  console.log(teamRef)
+
+  function scrollDown(){
+    teamRef.current.scrollIntoView({behavior: 'smooth'});
+  }
   return (
     <>
       <div className="justify-center items-center h-screen left-0 right-0 snap-center">
@@ -42,7 +48,7 @@ function Startpage() {
             />
           </div>
           <div className="flex w-full h-5/6 justify-center items-end absolute">
-            <BsFillCaretDownFill className="z-0 h-10 w-10 fill-gs-400 cursor-pointer animate-bounce"/>
+            <BsFillCaretDownFill className="z-0 h-10 w-10 fill-gs-400 cursor-pointer animate-bounce" onClick={scrollDown} />
           </div>
 
         </div>

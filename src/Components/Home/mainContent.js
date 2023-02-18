@@ -1,13 +1,14 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 import Team from './team';
 
 
-function MainContent() {
+const MainContent = forwardRef((props, ref) => {
+
     return ( 
         <>
-        <Team id="mainContent" />
+            <Team id="mainContent"  ref={ref}/>
         </>
      );
-}
+})
 
 export default MainContent;
