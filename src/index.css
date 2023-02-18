@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: white;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+@layer components {
+  .startImage {
+    @apply flex flex-col justify-center items-center bg-cat h-screen bg-center bg-no-repeat bg-cover left-0 right-0
+  }
+  .statIcon{
+    @apply w-full h-full max-h-16 fill-white max-md:max-h-12
+  }
+}
