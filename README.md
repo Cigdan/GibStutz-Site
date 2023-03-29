@@ -1,1 +1,3 @@
-"# GibStutz-Site" 
+# GibStutz-Site
+
+Website for GibStutz
