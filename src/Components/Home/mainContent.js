@@ -1,12 +1,12 @@
 import React, { forwardRef } from 'react';
-import Team from './team';
+import Team from './Team';
 
 
 const MainContent = forwardRef((props, ref) => {
 
     return ( 
         <>
-            <Team id="mainContent"  ref={ref}/>
+            <Team ref={ref} />
         </>
      );
 })

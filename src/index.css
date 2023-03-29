@@ -7,7 +7,7 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: white;
+  @apply text-gs-400 bg-gs-100
 }
 
 code {
@@ -21,6 +21,6 @@ code {
     @apply flex flex-col justify-center items-center bg-cat h-screen bg-center bg-no-repeat bg-cover left-0 right-0
   }
   .statIcon{
-    @apply w-full h-full max-h-16 fill-white max-md:max-h-12
+    @apply w-full h-full hidden md:block max-h-12 md:max-h-24
   }
 }

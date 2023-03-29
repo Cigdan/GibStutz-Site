@@ -8,8 +8,6 @@ import Highlight from "../../images/highlight.mp4";
 
 const Startpage = ({ teamRef }) => {
 
-  console.log(teamRef)
-
   function scrollDown(){
     teamRef.current.scrollIntoView({behavior: 'smooth'});
   }
@@ -25,8 +23,8 @@ const Startpage = ({ teamRef }) => {
           <source src={Highlight} type="video/mp4" />
         </video>
 
-        <div className="h-full flex items-center">
-          <div className="w-72 md:h-3/5 sm:h-4/5 flex flex-col items-center justify-center rounded-r-3xl bg-gs-300 bg-opacity-40 translate-y-0 p-6">
+        <div className="h-full items-center flex">
+          <div className="hidden w-72 md:h-3/5 sm:h-4/5 sm:flex flex-col items-center justify-center rounded-r-3xl bg-gs-200 bg-opacity-40 translate-y-0 p-6">
             <Counter
               count={1000}
               message="Tournaments won"
@@ -47,7 +45,7 @@ const Startpage = ({ teamRef }) => {
               image={<AiFillDollarCircle className="statIcon" />}
             />
           </div>
-          <div className="flex w-full h-5/6 justify-center items-end absolute">
+          <div className="flex w-full self-end mb-10 justify-center items-end absolute">
             <BsFillCaretDownFill className="z-0 h-10 w-10 fill-gs-400 cursor-pointer animate-bounce" onClick={scrollDown} />
           </div>
 

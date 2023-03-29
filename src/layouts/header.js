@@ -9,10 +9,10 @@ function Header() {
                 <img src={Logo} alt='Gibstutz Logo' className='h-16 ml-6'></img>
             </div>
             <nav className='mr-6 text-white hidden md:block'>
-                <button className='btn btn-ghost'>Home</button>
-                <button className='btn btn-ghost'>About us</button>
-                <button className='btn btn-ghost'>Schliere</button>
-                <button className='btn btn-ghost'>Game</button>
+                <button className='btn btn-ghost text-lg font-bold mx-5'>Home</button>
+                <button className='btn btn-ghost text-lg font-bold mx-5'>About us</button>
+                <button className='btn btn-ghost text-lg font-bold mx-5'>Schliere</button>
+                <button className='btn btn-ghost text-lg font-bold mx-5'>Game</button>
             </nav>
             <nav className='md:hidden sm:visible mr-6'>
                 <HiBars3BottomRight className='w-full h-10' />

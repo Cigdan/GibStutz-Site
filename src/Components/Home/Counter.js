@@ -9,9 +9,7 @@ function Counter(props) {
 
   function Stats(props) {
     const count = props.count;
-    const message = props.message;
     const unit = props.unit;
-    const image = props.image;
     const target = props.target;
     const waitTime = 2400 / (count - target);
     const [totalNumber, setTotalNumber] = useState(count);
@@ -24,12 +22,12 @@ function Counter(props) {
       }
     }, [totalNumber]);
     return (
-      <div className="card w-full h-[30%] my-3 min-h-max py-4 bg-gs-50 items-center overflow-visible dropdown dropdown-right" tabIndex="0">
-        {image}
-        <h2 className="min-md:text-2xl text-center break-words mt-2">
-          {message}
+      <div className="card w-full h-[30%] my-3 py-4 flex flex-col justify-center bg-gs-50 items-center" tabIndex="0">
+        {props.image}
+        <h2 className=" text-center font-bold text-xl break-words mt-2">
+          {props.message}
         </h2>
-        <h2 className="text-xl text-center">
+        <h2 className="text-xl text-center font-semibold">
           {totalNumber}
           {unit}
         </h2>
