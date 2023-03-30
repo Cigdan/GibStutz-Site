@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.5c26842e.css",
+    "main.js": "/static/js/main.b2cf39ee.js",
+    "static/js/787.58f3c04a.chunk.js": "/static/js/787.58f3c04a.chunk.js",
+    "static/media/highlight.mp4": "/static/media/highlight.062bbb4f23c0a4604634.mp4",
+    "static/media/Cigdan.png": "/static/media/Cigdan.dd7dea9c8ec370d1b257.png",
+    "static/media/gibstutztransparent.png": "/static/media/gibstutztransparent.8bd463441c7c1cabdb83.png",
+    "index.html": "/index.html",
+    "main.5c26842e.css.map": "/static/css/main.5c26842e.css.map",
+    "main.b2cf39ee.js.map": "/static/js/main.b2cf39ee.js.map",
+    "787.58f3c04a.chunk.js.map": "/static/js/787.58f3c04a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5c26842e.css",
+    "static/js/main.b2cf39ee.js"
+  ]
+}

@@ -1,5 +1,4 @@
 import React from "react";
-import "./home.css";
 import Counter from "./Counter";
 import { AiFillTrophy } from "react-icons/ai";
 import { BsFillKeyboardFill, BsFillCaretDownFill } from "react-icons/bs";
@@ -18,7 +17,7 @@ const Startpage = ({ teamRef }) => {
           autoPlay
           muted
           loop
-          className="h-screen w-screen absolute object-fill saturate-150 blur-sm"
+          className="h-screen w-screen absolute object-fill saturate-150"
         >
           <source src={Highlight} type="video/mp4" />
         </video>

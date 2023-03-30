@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react';
-import Team from './Team';
+import Team from './roster/Team';
 
 
 const MainContent = forwardRef((props, ref) => {

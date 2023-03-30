@@ -1,5 +1,5 @@
 import React, {useRef, forwardRef} from 'react';
-import Header from "../../layouts/header"
+import Header from "../../layouts/Header"
 import MainContent from './MainContent';
 import Startpage from './Startpage';
 
