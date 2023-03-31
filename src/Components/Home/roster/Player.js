@@ -13,21 +13,23 @@ function Player(props) {
     setOpen(false);
   }
 
-  function toggleCard(){
-    if(open === true){
-      setOpen(false)
-    }
-    else{
-      setOpen(true)
+  function toggleCard() {
+    if (open === true) {
+      setOpen(false);
+    } else {
+      setOpen(true);
     }
   }
 
   return (
     <>
-      <div onMouseOver={openCard} onClick={toggleCard} onMouseLeave={closeCard}>
+      <div onMouseOver={openCard} onMouseLeave={closeCard}>
         <HoverCard.Root open={open}>
           <HoverCard.Trigger>
-            <span className="card bg-gs-200 bg-opacity-40 w-72 h-80 flex flex-col items-center cursor-pointer hover:scale-105 transition-transform group">
+            <span
+              onClick={toggleCard}
+              className="card bg-gs-200 bg-opacity-40 w-72 h-80 flex flex-col items-center cursor-pointer hover:scale-105 transition-transform group"
+            >
               <div className="avatar pt-6">
                 <div className="w-52 rounded-[20%] transition-all group-hover:scale-110">
                   <img
