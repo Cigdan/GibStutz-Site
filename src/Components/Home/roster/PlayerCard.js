@@ -4,7 +4,7 @@ import { BsTwitter } from "react-icons/bs";
 function PlayerCard(props) {
   return (
     <>
-      <div className="card w-full h-full bg-gs-200">
+      <div className="card w-full h-full bg-gs-200 max-w-[100vw]">
         <div className="flex items-center justify-between mx-16 gap-8">
           <img
             src={require(`../../../images/roster/${props.player}.webp`)}

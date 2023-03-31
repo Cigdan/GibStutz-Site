@@ -13,11 +13,7 @@ module.exports = {
         "gs-300": "#778DA9",
         "gs-400": "#E0E1DD",
 
-      },
-      aspectRatio: {
-        '16/11': '16 / 11',
-      },
-
+      }
     }
   },
   plugins: [require("daisyui")],
