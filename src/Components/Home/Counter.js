@@ -22,15 +22,20 @@ function Counter(props) {
       }
     }, [totalNumber]);
     return (
-      <div className="card w-full h-[30%] my-3 py-4 flex flex-col justify-center bg-gs-50 items-center" tabIndex="0">
-        {props.image}
-        <h2 className=" text-center font-bold text-xl break-words mt-2">
-          {props.message}
-        </h2>
-        <h2 className="text-xl text-center font-semibold">
-          {totalNumber}
-          {unit}
-        </h2>
+      <div
+        className="card w-full h-1/3 my-2 py-4 flex flex-col justify-center bg-gs-200 items-center"
+        tabIndex="0"
+      >
+        <div className="h-full flex items-center">{props.image}</div>
+        <div className="h-full">
+          <h2 className=" text-center font-bold text-xl break-words">
+            {props.message}
+          </h2>
+          <h2 className="text-xl text-center font-semibold">
+            {totalNumber}
+            {unit}
+          </h2>
+        </div>
       </div>
     );
   }

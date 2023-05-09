@@ -38,7 +38,7 @@ function Player(props) {
           <HoverCard.Trigger>
             <span
               onClick={toggleCard}
-              className={`card bg-gs-200 bg-opacity-40 w-72 h-auto flex flex-col items-center 
+              className={`card bg-gs-100 w-72 flex flex-col items-center 
                           cursor-pointer hover:scale-105 transition-transform group border-solid border-${borderWidth}`}
             >
               <div className="avatar w-full">
@@ -49,7 +49,7 @@ function Player(props) {
                   />
                 </div>
               </div>
-              <div className="w-full flex justify-center items-center flex-grow py-3">
+              <div className="flex justify-center items-center flex-grow py-3">
                 <h2 className="text-3xl font-semibold">{props.player}</h2>
               </div>
             </span>

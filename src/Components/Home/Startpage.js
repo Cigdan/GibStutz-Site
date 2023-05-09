@@ -23,7 +23,7 @@ const Startpage = ({ teamRef }) => {
         </video>
 
         <div className="h-full items-center flex">
-          <div className="hidden w-72 md:h-3/5 sm:h-4/5 sm:flex flex-col items-center justify-center rounded-r-3xl bg-gs-200 bg-opacity-40 translate-y-0 p-6">
+          <div className="hidden w-72 bg-gs-300 md:h-4/6 sm:h-4/5 sm:flex flex-col items-center justify-center rounded-r-3xl bg-opacity-40 translate-y-0 p-6">
             <Counter
               count={1000}
               message="Tournaments won"
